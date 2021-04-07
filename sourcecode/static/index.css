@@ -1,0 +1,311 @@
+/* Font Embeds */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Body */
+
+#lower-container {
+    background: #F6F8FA;
+    height: 100%;
+}
+
+/* Navigation Box */
+
+#houses-navigation {
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.10);
+    padding: 15px;
+}
+
+#houses-navigation > form > a, #houses-navigation > form > #harvard-logo {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.housing-nav-button {
+    font-family: "Montserrat";
+    color: #445d6e;
+    text-decoration: none;
+}
+
+.housing-nav-button:hover, .active {
+    color: #8B1627;
+    transition: 0.01s all ease;
+    text-decoration: none;
+}
+
+#houses-navigation > form {
+    width: 100%;
+    justify-content: center;
+}
+
+#harvard-logo {
+    position: absolute;
+    width: 75px;
+    height: 107px;
+    margin-top: -30px;
+}
+
+@media only screen and (max-width: 1325px) {
+    #nav-left-element {
+        margin-right: 50px !important;
+    }
+    #nav-right-element {
+        margin-left: 50px !important;
+    }
+    #harvard-logo-container {
+        display: none;
+    }
+}
+
+/* Home Hero */
+
+.main-background-image {
+    background-position:center;
+    background-size:cover;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    background-blend-mode: multiply;
+}
+
+.main-background-text {
+    text-align:center;
+    color:white;
+    font-size:20px;
+    font-family:'Montserrat';
+}
+
+.main-background-text > h1 {
+    font-weight: 700;
+}
+
+#housing-text-link {
+    color: #d55954;
+}
+
+#housing-text-link:hover {
+    text-decoration:none;
+}
+
+/* Loading Screen */
+
+#loading-screen {
+    background:white;
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0
+}
+#loading-animation {
+    position:absolute;
+    top:50%;
+    left:50%;
+}
+
+/* Houses Map */
+
+#map {
+    height:500px;
+    width:1000px;
+    background: #F1F1F1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform:translateY(-50px);
+    box-shadow: 0 8px 10px rgba(50,50,93,.1);
+}
+
+/* Survey Form */
+
+.text-box {
+    border: 1px solid #d2d8dd;
+    border-radius: 3px;
+    display: block;
+    width: 300px;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+}
+
+.text-box:focus {
+    outline:none;
+    border:1px solid #4D90FE;
+}
+
+#survey-container {
+    width: 60%;
+    box-shadow: 0 0 1.25rem rgba(108,118,134,.1);
+    border-radius: .25rem;
+    display: block;
+    justify-content: left;
+    align-items: left;
+    margin-left: auto;
+    margin-right: auto;
+    background:white;
+    margin-top:-40px;
+    text-align:left;
+    padding-left: 150px;
+    padding-right:150px;
+    padding-top:50px;
+    padding-bottom:200px;
+    transform:translateY(-40px);
+}
+
+.body-text {
+    font-family: 'Montserrat';
+    color: #333;
+    font-weight: 300;
+    font-size:13pt;
+}
+
+.header-text {
+    font-family: 'Montserrat';
+    color: #303030;
+    font-weight: 600;
+    font-size:14pt;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+#survey-container > label {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size:14pt;
+    padding-bottom:30px;
+    padding-top:30px;
+    color: #333;
+    font-weight: 300;
+}
+
+#survey-container > h5 {
+    color: #445d6e;
+    font-size: 12pt;
+    font-family: "Montserrat";
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.select-box {
+    width: 300px;
+    height: 41px;
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 15px;
+    border: 1px solid #d2d8dd;
+    border-radius: 3px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.select-box:focus {
+    outline: none;
+    border: 1px solid #4D90FE;
+}
+
+#certification {
+    margin-right: 5px;
+}
+
+#certification-label, .radio-question, .select-label {
+    font-family: 'Montserrat';
+    color: #333;
+    font-weight: 300;
+}
+
+.form-ul {
+    list-style-type: none;
+}
+
+.form-ul > li > label {
+     font-family: 'Montserrat';
+     color: #303030;
+     margin-left: 5px;
+}
+
+#submit-button {
+    outline: 0;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background: #D55954;
+}
+
+#error-message {
+     font-family: 'Montserrat';
+     color: #ff4747;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+
+/* Data Display */
+
+.table-wrapper > table {
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #f0f2f6;
+    background-color: #fff;
+    box-shadow: 0 0 1.25rem rgba(108,118,134,.1);
+}
+
+.table-wrapper > table > thead > tr > th {
+    padding: 15px;
+}
+
+.table-wrapper > table > tbody > tr > td {
+    padding: 15px;
+}
+
+.table-wrapper > table > tbody > tr:nth-child(even), table > thead > tr {
+    background-color: #F6F8FA;
+}
+
+.table-wrapper {
+    max-height:430px;
+    width: 1000px !important;
+    padding: 40px 40px 45px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transform: translateY(-30px);
+}
+
+/* Houses Summary */
+
+.house-icon {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 75px;
+    height: 150px;
+    width: 130px;
+}
+
+.houses-container {
+    padding-top: 50px;
+    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-container {
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.houses-information {
+    margin-top: 20px;
+    padding-bottom: 100px;
+    background: #EAF0F7;
+}
